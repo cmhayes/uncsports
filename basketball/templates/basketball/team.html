@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block title %}{{team.name}}{% endblock %}
+
+{% block content %}
+	<ul>
+		<li>i see you</li>
+	{% for i in teamList %}
+		<li>{{ i.name }}</li>
+	{% endfor %}
+	</ul>
+
+
+{% endblock %}

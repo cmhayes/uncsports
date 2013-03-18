@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block title %}{{player.name}} | Men's Basketball{% endblock %}
+
+{% block content %}
+
+<ul class="thumbnails">
+	<li class="span3">
+		<div class="thumbnail well">
+			<img src={{ player.img }} alt="" />
+			<h3 class="text-center">{{player.name}} | #{{player.number}}</h3>
+			<p>Thumbnail caption...</p>
+		</div>
+	</li>
+	<li class="span9">
+		<div class="well">
+			{{player.hometown}}
+		</div>
+	</li>
+</ul>
+
+{% endblock %}

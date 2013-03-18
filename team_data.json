@@ -1,0 +1,67 @@
+[
+    {
+        "pk": 1,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Men's Basketball",
+            "season": "2012-2013",
+            "acc_record":"",
+            "overall_record":"",
+            "ranking":"",
+            "players":"" 
+        }
+    },
+
+    {
+        "pk": 2,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Women's Basketball",
+            "season": "2012-2013",
+            "acc_record":"",
+            "overall_record":"",
+            "ranking":"",
+            "players":""
+        }
+    },
+
+    {
+        "pk": 3,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Men's Lacrosse",
+            "season": "2012-2013",
+            "acc_record":"",
+            "overall_record":"",
+            "ranking":"",
+            "players":""
+        }
+    },
+
+    {
+        "pk": 4,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Women's Basketball",
+            "season": "2012-2013",
+            "acc_record":"",
+            "overall_record":"",
+            "ranking":"",
+            "players":""
+        }
+    },
+
+    {
+        "pk": 5,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Baseball",
+            "season": "2012-2013",
+            "acc_record":"",
+            "overall_record":"",
+            "ranking":"",
+            "players":""
+        }
+    }
+
+]
