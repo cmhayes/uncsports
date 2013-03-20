@@ -4,12 +4,33 @@
 {% block title %}{{team.name}}{% endblock %}
 
 {% block content %}
-	<ul>
-		<li>i see you</li>
-	{% for i in teamList %}
-		<li>{{ i.name }}</li>
-	{% endfor %}
-	</ul>
+		<img class="img-rounded" src="http://img.bleacherreport.net/img/images/photos/002/197/163/hi-res-162463646_crop_exact.jpg?w=650&h=440&q=75" style="margin-left:45px;"/>
+		<h2 class="text-center">Men's Basketball | {{team.season}}</h2>
+		{% for i in teamList %}
+			<a href= {% url 'mens_basketball_players' i.id %}><img src="" class="img-circle {{i.img}}" width="140px" /></a>
+		{% endfor %}
+{% endblock %}
 
-
+{% block side %}
+		<h4>Team Stats</h4>
+		<h5>ACC: {{team.acc_record}} </h5>
+		<h5>Overall: {{team.overall_record}} </h5>
+		<h5>Top 25 Rank: {{team.ranking}} </h5>
+		<br>
+		<h4>NCAA Status</h4>
+		<h5>Seeding: 8 </h5>
+		<h5>Region: South </h5>
+		<h5>Next Game: <br> 
+			9 Villanova <br> 
+			Fri 3/22</h5>
+		<hr />
+		<h4>Team News</h4>
+		<ul class="nav nav-list">
+			<li><a href="#">Team send off, Wednesday</a></li>
+			<li><a href="#">Tarheels get 8 seed</a></li>
+			<li><a href="#">Lucas: Familiar Territory</a></li>
+			<li><a href="#">ACC Coaches honor trio</a></li>
+		</ul>
+	
+	
 {% endblock %}

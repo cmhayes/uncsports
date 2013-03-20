@@ -1,0 +1,79 @@
+h4, h5 {
+	letter-spacing: 1px;
+}
+
+hr {
+	border-color: #333;
+}
+
+a {
+	font-weight: bold;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+.container-fluid {
+	background-color: #000;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/a/a4/Duke_UNC_Basketball_Game_at_Chapel_Hill.jpg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.nav-header {
+	font-size: 17.5px;
+	color: #333;
+}
+
+.img-circle {
+	border: 8px solid; 
+	border-color: rgba(250, 250, 250, .9);
+	margin: 12px;
+	width: 140px;
+	height: 140px;
+	background-position: center;
+	background-size: 140px 140px;
+}
+
+.Joel-James {background-image: url(/static/img/Joel-James.png);}
+.Dexter-Strickland {background-image: url(/static/img/Dexter-Strickland.png);}
+.Leslie-McDonald {background-image: url(/static/img/Leslie-McDonald.png);}
+.Wade-Moody {background-image: url(/static/img/Wade-Moody.png);}
+.Luke-Davis {background-image: url(/static/img/Luke-Davis.png);}
+.Marcus-Paige {background-image: url(/static/img/Marcus-Paige.png);}
+.Brice-Johnson {background-image: url(/static/img/Brice-Johnson.png);}
+.Desmond-Hubert {background-image: url(/static/img/Desmond-Hubert.png);}
+.PJ-Hairston {background-image: url(/static/img/PJ-Hairston.png);}
+.Jackson-Simmons {background-image: url(/static/img/Jackson-Simmons.png);}
+.Frank-Tanner {background-image: url(/static/img/Frank-Tanner.png);}
+.JP-Tokoto {background-image: url(/static/img/JP-Tokoto.png);}
+.James-Manor {background-image: url(/static/img/James-Manor.png);}
+.Denzel-Robinson {background-image: url(/static/img/Denzel-Robinson.png);}
+.Reggie-Bullock {background-image: url(/static/img/Reggie-Bullock.png);}
+.James-McAdoo {background-image: url(/static/img/James-McAdoo.png);}
+
+.Joel-James:hover {background-image: url(/static/img/jj.png);}
+.Dexter-Strickland:hover {background-image: url(/static/img/ds.png);}
+.Leslie-McDonald:hover {background-image: url(/static/img/lm.png);}
+.Wade-Moody:hover {background-image: url(/static/img/wm.png);}
+.Luke-Davis:hover {background-image: url(/static/img/ld.png);}
+.Marcus-Paige:hover {background-image: url(/static/img/mp.png);}
+.Brice-Johnson:hover {background-image: url(/static/img/bj.png);}
+.Desmond-Hubert:hover {background-image: url(/static/img/dh.png);}
+.PJ-Hairston:hover {background-image: url(/static/img/pj.png);}
+.Jackson-Simmons:hover {background-image: url(/static/img/js.png);}
+.Frank-Tanner:hover {background-image: url(/static/img/ft.png);}
+.JP-Tokoto:hover {background-image: url(/static/img/jp.png);}
+.James-Manor:hover {background-image: url(/static/img/jm.png);}
+.Denzel-Robinson:hover {background-image: url(/static/img/dr.png);}
+.Reggie-Bullock:hover {background-image: url(/static/img/rb.png);}
+.James-McAdoo:hover {background-image: url(/static/img/jmm.png);}
+
+.well{
+	background-color: rgba(250, 250, 250, .8);
+	border: none;
+	padding: 0 auto;
+}
+

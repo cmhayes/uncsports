@@ -1,3 +1,4 @@
+{% load url from future %}
 <!DOCTYPE html>
 
 <html>
@@ -5,39 +6,62 @@
 	<title>{% block title %}University of North Carolina at Chapel Hill Athletics{% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="{{ STATIC_URL }}css/app.css" rel="stylesheet">
 </head>
 
 <body>
-
-	<div class="content">
-		<div class="container-fluid">
-			<div class="navbar">
-				<form class="navbar-search pull-right">
-					<input type="text" class="search-query" placeholder="Search">
-				</form>
-				<ul class="nav pull-right">
-					<li><a href="#">Men's Sports</a></li>
-					<li><a href="#">Women's Sports</a></li>
-					<li><a href="#">UNC Hall of Fame</a></li>
-				</ul>
-				<div class="navbar-inner">
-					<div class="container">
-
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</a>
-					<!-- Everything you want hidden at 940px or less, place within here -->
-					<div class="nav-collapse collapse">
-					<!-- .nav, .navbar-search, .navbar-form, etc -->
-					</div>
-					</div>
-				</div>
-			</div>			
+	<div class="container-fluid">
+		<a href={% url 'sports_home' %}><img src="{{STATIC_URL}}img/unclogo.png" style="margin-left: 8%;"/></a>
+	<div class="row-fluid">
+		<div class="span2 well">
+			<ul class="nav nav-list">
+				<li class="nav-header">Men's Sports</li>
+					<li><a href="#">Baseball</a></li>
+			    	<li><a href="/team/1">Basketball</a></li>
+			    	<li><a href="#">Cross Country</a></li>
+			    	<li><a href="#">Fencing</a></li>
+			    	<li><a href="#">Football</a></li>
+			    	<li><a href="#">Golf</a></li>
+			    	<li><a href="#">Lacrosse</a></li>
+			    	<li><a href="#">Soccer</a></li>
+			    	<li><a href="#">Swimming & Diving</a></li>
+			    	<li><a href="#">Tennis</a></li>
+			    	<li><a href="#">Track & Field</a></li>
+			    	<li><a href="#">Wrestling</a></li>
+				<li class="nav-header">Women's Sports</li>
+					<li><a href="#">Basketball</a></li>
+			    	<li><a href="#">Cross Country</a></li>
+			    	<li><a href="#">Fencing</a></li>
+			    	<li><a href="#">Field Hockey</a></li>
+			    	<li><a href="#">Golf</a></li>
+			    	<li><a href="#">Gymnastics</a></li>
+			    	<li><a href="#">Lacrosse</a></li>
+			    	<li><a href="#">Rowing</a></li>
+			    	<li><a href="#">Soccer</a></li>
+			    	<li><a href="#">Softball</a></li>
+			    	<li><a href="#">Swimming & Diving</a></li>
+			    	<li><a href="#">Tennis</a></li>
+			    	<li><a href="#">Track & Field</a></li>
+			    	<li><a href="#">Volleyball</a></li>
+			</ul>
+		</div>
+		<div class="span8 mens-bball well">
 			{% block content %}{% endblock %}
 		</div>
+		<div class="span2 well">
+			{% block side %}{% endblock %}
+			<br><br><hr />
+			<h5>Find us online!</h5>
+			<img src="{{STATIC_URL}}img/facebook.png" />
+			<img src="{{STATIC_URL}}img/twitter.png" />
+			<img src="{{STATIC_URL}}img/google+.png" />
+			<img src="{{STATIC_URL}}img/youtube.png" />
+			<img src="{{STATIC_URL}}img/flickr.png" />
+			<img src="{{STATIC_URL}}img/rss.png" />
+		</div>
+	</div>
+
 	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

@@ -12,6 +12,7 @@ class Player(models.Model):
 	high_school = models.CharField(unique=False, max_length=50)
 	major = models.CharField(unique=False, max_length=50)
 	img = models.CharField(max_length =100)
+	bio = models.CharField(max_length=5000)
 
 	def __unicode__(self):
 		return U'%s %s' %(self.name, self.number)
@@ -23,10 +24,6 @@ class Team(models.Model):
 	overall_record = models.CharField(unique=False, max_length=10)
 	ranking = models.CharField(unique=False, max_length=3)
 	players = models.ManyToManyField(Player)
-
-	class Meta(object):
-		verbose_name_plural = "Teams"
-		ordering = ('name', )
 
 	def save(self, *args, **kwargs):
 		self.name = self.name.upper()

@@ -5,7 +5,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def home(request):
 	context = {
-		'players_count': Players.objects.count(),
+		'player_count': Player.objects.count(),
 		'team_count': Team.objects.count(),
 	}
 	return render(request, "basketball/home.html", context)	
@@ -21,5 +21,6 @@ def team(request, pk):
 	return render(request, "basketball/team.html", context)
 
 def player(request, pk):
+	# players = Player.objects.all()
 	player = get_object_or_404(Player, id=pk)
 	return render (request, "basketball/player.html", {'player': player})

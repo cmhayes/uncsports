@@ -1,23 +1,39 @@
 {% extends "base.html" %}
-{% load url from future %}
+
 
 {% block title %}{{player.name}} | Men's Basketball{% endblock %}
 
 {% block content %}
+<div class="row-fluid">
+	<div class="span5">
+		<img src="{{STATIC_URL}}img/{{ player.img }}.png" class="img-rounded" width="250px" />
+	</div>
+	<div class="span7">
+			<h1 class="stat-card-title">{{player.name}} | #{{player.number}}</h1>
+			<hr />
+			<h4>{{player.height}} in, {{player.weight}} lbs</h4>
+			<h5>Position: {{player.position}} </h5>
+			<h5>Year: {{player.year}} </h5>
+			<h5>Major: {{player.hometown}} </h5>
+			<h5>Hometown: {{player.major}} </h5>
+			<h5>High School: {{player.high_school}} </h5>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span12">
+		{{player.bio}}
+	</div>	
+</div>
 
-<ul class="thumbnails">
-	<li class="span3">
-		<div class="thumbnail well">
-			<img src={{ player.img }} alt="" />
-			<h3 class="text-center">{{player.name}} | #{{player.number}}</h3>
-			<p>Thumbnail caption...</p>
-		</div>
-	</li>
-	<li class="span9">
-		<div class="well">
-			{{player.hometown}}
-		</div>
-	</li>
+{% endblock %}
+
+{% block side %}
+<h4>Team News</h4>
+<ul class="nav nav-list">
+	<li><a href="#">Team send off, Wednesday</a></li>
+	<li><a href="#">Tarheels get 8 seed</a></li>
+	<li><a href="#">Lucas: Familiar Territory</a></li>
+	<li><a href="#">ACC Coaches honor trio</a></li>
 </ul>
 
 {% endblock %}
