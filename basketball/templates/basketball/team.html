@@ -7,7 +7,7 @@
 		<img class="img-rounded" src="http://img.bleacherreport.net/img/images/photos/002/197/163/hi-res-162463646_crop_exact.jpg?w=650&h=440&q=75" style="margin-left:45px;"/>
 		<h2 class="text-center">Men's Basketball | {{team.season}}</h2>
 		{% for i in teamList %}
-			<a href= {% url 'mens_basketball_players' i.id %}><img src="" class="img-circle {{i.img}}" width="140px" /></a>
+			<a href= "{% url 'mens_basketball_players' {{i.id}} %}"><img src="" class="img-circle {{i.img}}" width="140px" /></a>
 		{% endfor %}
 {% endblock %}
 
